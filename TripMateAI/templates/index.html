@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TripMate AI — Travel Planner</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+</head>
+<body>
+    <div class="app">
+        <header class="topbar">
+            <div class="brand">
+                <span class="logo">🧭</span>
+                <div>
+                    <h1>TripMate&nbsp;AI</h1>
+                    <p>Flights · Trains · Hotels · Itineraries</p>
+                </div>
+            </div>
+            <button id="newChat" class="ghost-btn" title="Start a new trip">＋ New trip</button>
+        </header>
+
+        <main id="chat" class="chat">
+            <div class="welcome" id="welcome">
+                <div class="welcome-card">
+                    <h2>Where to next? ✈️🚆</h2>
+                    <p>Ask me to plan a trip and I'll pull real flights, trains, hotels, and build a day-by-day itinerary.</p>
+                    <div class="chips">
+                        <button class="chip">Plan a 3 day budget trip from Bangalore to Udaipur</button>
+                        <button class="chip">Cheapest way to get from Delhi to Mumbai tomorrow</button>
+                        <button class="chip">Weekend getaway to Goa with hotels</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="composer">
+            <form id="chatForm">
+                <textarea id="input" rows="1" placeholder="Plan a trip… e.g. 3 days in Udaipur from Bangalore" autocomplete="off"></textarea>
+                <button id="send" type="submit" aria-label="Send">➤</button>
+            </form>
+            <p class="hint">Enter to send · Shift+Enter for a new line</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>
